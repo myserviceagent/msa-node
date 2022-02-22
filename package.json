@@ -1,0 +1,38 @@
+{
+  "name": "msa-node",
+  "version": "1.0.0",
+  "description": "A library that allows writing Node.js code to make HTTP requests to the MyServiceAgent API. Written in Typescript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && microbundle  --tsconfig tsconfig.json",
+    "dev": "microbundle watch --tsconfig tsconfig.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myserviceagent/msa-node.git"
+  },
+  "keywords": [
+    "myserviceagent.net",
+    "javascript",
+    "node.js",
+    "api",
+    "client",
+    "library"
+  ],
+  "author": "Joshua Olatunde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myserviceagent/msa-node/issues"
+  },
+  "homepage": "https://github.com/myserviceagent/msa-node#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.5.1",
+    "microbundle": "^0.14.2",
+    "nock": "^13.2.4"
+  }
+}
