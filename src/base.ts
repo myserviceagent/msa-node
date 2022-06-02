@@ -29,7 +29,6 @@ export abstract class Base {
             ...options,
             headers,
         }
-        console.log(config)
 
         return fetch(url, config).then(r => {
             if (r.ok) {
