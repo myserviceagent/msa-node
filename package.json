@@ -1,6 +1,6 @@
 {
   "name": "msa-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that allows writing Node.js code to make HTTP requests to the MyServiceAgent API. Written in Typescript.",
   "main": "dist/index.js",
   "scripts": {
