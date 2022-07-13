@@ -46,6 +46,10 @@ MyServiceAgentClient.sendVoiceOTP(voicePayload).then((data) => {
 | append_otp_to_message |  No             | 
 | sender_id             |  No             |
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 const payload = {msisdn: '2348000000000'}
 MyServiceAgentClient.sendSMSOTP(payload).then((data) => {
