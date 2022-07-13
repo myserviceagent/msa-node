@@ -31,14 +31,23 @@ MyServiceAgentClient.createSMS(smsPayload).then((data) => {
     console.log(data)
 })
 
+```
 // send a voice OTP
+| parameter name | required |
+| --- | --- |
+| msisdn |  Yes |
+| otp | No |
+| expires | No |
+| length | No |
+| alphanumeric | No |
+| message | No |
+```
 const voicePayload = {msisdn: '2348000000000', otp: '24566'}
 MyServiceAgentClient.sendVoiceOTP(voicePayload).then((data) => {
     console.log(data)
 })
 ```
 // send an sms OTP
-
 | parameter name | required |
 | --- | --- |
 | msisdn |  Yes |
@@ -60,11 +69,7 @@ MyServiceAgentClient.sendSMSOTP(payload).then((data) => {
 | parameter name | required |
 | --- | --- |
 | msisdn |  Yes |
-| otp | No |
-| expires | No |
-| length | No |
-| alphanumeric | No |
-| message | No |
+| otp | Yes |
 ```
 const verifyPayload = {msisdn: '2348000000000', otp: '24566'}
 MyServiceAgentClient.verifyOTP(verifyPayload).then((data) => {
