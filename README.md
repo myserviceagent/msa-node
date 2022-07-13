@@ -55,7 +55,17 @@ MyServiceAgentClient.sendSMSOTP(payload).then((data) => {
     console.log(data)
 })
 
+```
 // verify a voice or SMS OTP
+| parameter name | required |
+| --- | --- |
+| msisdn |  Yes |
+| otp | No |
+| expires | No |
+| length | No |
+| alphanumeric | No |
+| message | No |
+```
 const verifyPayload = {msisdn: '2348000000000', otp: '24566'}
 MyServiceAgentClient.verifyOTP(verifyPayload).then((data) => {
     console.log(data)
