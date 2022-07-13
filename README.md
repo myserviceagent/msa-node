@@ -18,16 +18,7 @@ npm i msa-node
 Import `msa-node` module in your project and initialize it with your [apiKey]. Get if from (https://myserviceagent.net). 
 
 
-| parameter name | required |
-| --- | --- |
-| msisdn |  Yes |
-| otp | No |
-| expires | No |
-| length | No |
-| alphanumeric | No |
-| message | No |
-| append_otp_to_message | No | 
-| sender_id | No |
+
 
 
 ```js
@@ -45,8 +36,20 @@ const voicePayload = {msisdn: '2348000000000', otp: '24566'}
 MyServiceAgentClient.sendVoiceOTP(voicePayload).then((data) => {
     console.log(data)
 })
-
+```
 // send an sms OTP
+
+| parameter name | required |
+| --- | --- |
+| msisdn |  Yes |
+| otp | No |
+| expires | No |
+| length | No |
+| alphanumeric | No |
+| message | No |
+| append_otp_to_message | No | 
+| sender_id | No |
+```
 const payload = {msisdn: '2348000000000'}
 MyServiceAgentClient.sendSMSOTP(payload).then((data) => {
     console.log(data)
