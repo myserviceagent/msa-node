@@ -35,7 +35,7 @@ MyServiceAgentClient.sendVoiceOTP(voicePayload).then((data) => {
 
 // send an sms OTP
 
-    | Parameter Name | Required |
+    | parameter name | required |
     | --- | --- |
     | msisdn |  Yes |
     | otp | No |
